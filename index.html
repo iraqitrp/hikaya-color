@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ar" dir="rtl"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#142b35"><title>حكاية ولَوِّن | استوديو صناعة الكتب</title>
+<link rel="stylesheet" href="/style.css"></head><body>
+<div class="shell">
+<aside class="sidebar"><div class="brand"><span class="mark">ح</span><div><b>حكاية ولَوِّن</b><small>HIKAYA & COLOR STUDIO</small></div></div>
+<div class="nav-label">مساحة العمل</div>
+<button class="nav active" data-view="dashboard">⌂　لوحة التحكم</button>
+<button class="nav" data-view="project">▤　إعداد الكتاب</button>
+<button class="nav" data-view="pages">▦　صفحات الكتاب</button>
+<button class="nav" data-view="characters">♙　الشخصيات</button>
+<button class="nav" data-view="export">⇩　التصدير</button>
+<div class="side-note"><b>استوديو الإبداع</b><p>من الفكرة إلى صفحات كتابك، في مساحة واحدة.</p></div></aside>
+<main><header class="topbar"><div class="mobile-brand"><span class="mark">ح</span><b>حكاية ولَوِّن</b></div><span class="crumb">استوديو الكتب　/　<b id="crumb">لوحة التحكم</b></span><span class="save-state">●　حفظ محلي تلقائي</span></header>
+<section class="view" id="dashboard"><div class="hero"><div><small>مساحة صناعة كتب الأطفال</small><h1>حوّل خيالك إلى<br><em>حكاية تُلوَّن.</em></h1><p>أنشئ قصصاً تعليمية، قسّمها إلى مشاهد، جهّز أوصاف الرسومات، واحتفظ بمشروعك.</p><button class="gold" id="start">＋ ابدأ كتاباً جديداً</button></div><div class="book-art"><span>✦</span><b>حكاية<br>مُلَوَّنة</b><small>كتابك يبدأ من هنا</small></div></div>
+<div class="section-head"><div><h2>نظرة عامة</h2><p>ملخص مشروعك الحالي</p></div><span class="badge">مشروع قيد العمل</span></div>
+<div class="stats"><article><small>عنوان الكتاب</small><b id="statTitle">بابل – حضارة من تاريخ العراق</b></article><article><small>عدد الصفحات</small><b id="statPages">20 صفحة</b></article><article><small>الشخصيات</small><b>شخصيتان ثابتتان</b></article><article><small>حالة المشروع</small><b id="statStatus">جاهز للإعداد</b></article></div>
+<div class="section-head"><div><h2>خطوات إنشاء الكتاب</h2><p>ابدأ بالترتيب المقترح</p></div></div>
+<div class="steps"><button data-go="project"><i>01</i><b>إعداد القصة</b><small>العنوان والعمر واللغة</small></button><button data-go="characters"><i>02</i><b>تثبيت الشخصيات</b><small>الأوصاف والمظهر</small></button><button data-go="pages"><i>03</i><b>توليد الصفحات</b><small>تقسيم القصة والمشاهد</small></button><button data-go="export"><i>04</i><b>التصدير</b><small>حفظ ملفات المشروع</small></button></div></section>
+<section class="view hidden" id="project"><div class="heading"><small>الخطوة الأولى</small><h1>إعداد الكتاب</h1><p>حدد مواصفات الكتاب وأدخل الفكرة الأساسية.</p></div><div class="panel"><h3>المعلومات الأساسية</h3><div class="grid">
+<label class="wide">عنوان الكتاب<input id="title" value="بابل – حضارة من تاريخ العراق"></label>
+<label>لغة الكتاب<select id="language"><option>العربية</option><option>الإنجليزية</option><option>العربية والإنجليزية</option></select></label>
+<label>الفئة العمرية<select id="age"><option>4–6 سنوات</option><option selected>7–9 سنوات</option><option>10–12 سنة</option></select></label>
+<label>عدد الصفحات الداخلية<input id="count" type="number" min="5" max="50" value="20"></label>
+<label>حجم الصفحة<select id="size"><option>A4 عمودي</option><option>A4 أفقي</option><option>A5 عمودي</option></select></label>
+<label>جودة الرسم<select id="quality"><option>4K</option><option>2K</option><option>300 DPI للطباعة</option></select></label>
+<label>أسلوب الرسم<select id="style"><option>رسوم تلوين بخطوط سوداء واضحة</option><option>رسوم قصص أطفال ثلاثية الأبعاد</option><option>كرتوني تعليمي</option><option>واقعي مبسط</option></select></label>
+<label class="wide">ملخص القصة<textarea id="story" rows="5">طفلان يبدآن رحلة عبر بوابة عشتار لاكتشاف حضارة بابل ومعالمها وحياة أهلها.</textarea><small>اكتب الفكرة العامة لتجهيز تسلسل المشاهد.</small></label></div>
+<div class="checks"><label><input id="cover" type="checkbox" checked> غلاف أمامي وخلفي</label><label><input id="certificate" type="checkbox" checked> شهادة إنجاز</label></div>
+<div class="actions"><span>يمكنك تعديل الإعدادات لاحقاً.</span><button class="primary" id="saveProject">حفظ الإعدادات</button></div></div></section>
+<section class="view hidden" id="characters"><div class="heading"><small>الخطوة الثانية</small><h1>الشخصيات الرئيسية</h1><p>أوصاف ثابتة تُضاف إلى جميع صفحات القصة.</p></div><div class="char-grid">
+<div class="panel"><div class="char-icon">👦</div><label>اسم الطفل<input id="boy" value="آدم"></label><label>وصف الطفل<textarea id="boyDesc" rows="4">طفل بعمر 8 سنوات، شعر أسود قصير، عينان بنيتان، يرتدي قميصاً بسيطاً وسروالاً.</textarea></label></div>
+<div class="panel"><div class="char-icon">👧</div><label>اسم الطفلة<input id="girl" value="ليلى"></label><label>وصف الطفلة<textarea id="girlDesc" rows="4">طفلة بعمر 8 سنوات، شعر بني طويل مربوط، عينان بنيتان، ترتدي ثوباً بسيطاً.</textarea></label></div></div>
+<div class="notice">لثبات أعلى في الصور لاحقاً، سنضيف إمكانية رفع صور مرجعية للشخصيات عند ربط محرك توليد الصور.</div><div class="actions"><span>احفظ التغييرات قبل الانتقال.</span><button class="primary" id="saveCharacters">حفظ الشخصيات</button></div></section>
+<section class="view hidden" id="pages"><div class="heading"><small>الخطوة الثالثة</small><h1>إنشاء صفحات الكتاب</h1><p>أنشئ مخطط القصة، ثم حرر كل مشهد وجهّز وصف الرسم.</p></div>
+<div class="generator"><div><small>مولّد الكتاب</small><h2>حوّل قصتك إلى صفحات مرتبة</h2><p>يقسم القصة إلى مشاهد وعناوين وأوصاف مستقلة.</p></div><button class="gold" id="generate">✦　توليد مخطط الكتاب</button></div>
+<div class="progress hidden" id="progress"><div><span id="progressText">جاري تجهيز المخطط</span><b id="progressPct">0%</b></div><div class="track"><i id="progressBar"></i></div></div>
+<div class="workspace"><aside class="page-list"><div class="list-head"><b>صفحات الكتاب</b><span id="pageCount">0 صفحة</span></div><div id="pagesList" class="list-body">اضغط توليد مخطط الكتاب للبدء.</div></aside>
+<div class="panel editor"><div id="emptyEditor" class="empty"><b>✧</b><strong>لم يتم اختيار صفحة</strong><p>أنشئ المخطط ثم اختر صفحة لتعديلها.</p></div>
+<div id="editArea" class="hidden"><small id="pageNo">الصفحة 1</small><h3>تحرير مشهد الصفحة</h3><label>عنوان الصفحة<input id="pageTitle"></label><label>وصف المشهد<textarea id="pageDescription" rows="5"></textarea></label><div class="actions"><button class="primary" id="savePage">حفظ التعديلات</button><button class="outline" id="makePrompt">تجهيز وصف الرسم</button></div><label>الوصف الفني<textarea id="prompt" rows="7" readonly placeholder="اضغط تجهيز وصف الرسم."></textarea></label><button class="outline" id="copyPrompt">نسخ الوصف الفني</button></div></div></div>
+<div class="notice warning"><b>تنبيه تقني:</b> زر توليد مخطط الكتاب يعمل ويُنشئ الصفحات وأوصافها داخل التطبيق. توليد الصور الفعلية يتطلب ربط مزود صور ومفتاح API آمن على الخادم؛ لم يتم تفعيل ذلك بعد.</div></section>
+<section class="view hidden" id="export"><div class="heading"><small>الخطوة الرابعة</small><h1>التصدير والاحتفاظ بالمشروع</h1><p>نزّل نسخة من بيانات مشروعك لمتابعة العمل عليها.</p></div><div class="export-grid"><div class="panel"><div class="file-icon">JSON</div><h3>ملف المشروع الكامل</h3><p>الإعدادات والشخصيات والصفحات والأوصاف الفنية.</p><button class="primary" id="downloadJson">تنزيل ملف المشروع</button></div><div class="panel"><div class="file-icon">TXT</div><h3>مخطط القصة</h3><p>عناوين الصفحات وأوصاف المشاهد بترتيبها.</p><button class="outline" id="downloadTxt">تنزيل مخطط القصة</button></div></div><div class="notice warning">تصدير PDF/PNG الطباعي وتجميع الرسومات في كتاب واحد يحتاجان ربط محرك الصور وإضافة مرحلة إخراج الطباعة.</div></section>
+</main></div><div id="toast" class="toast"></div><script type="module" src="/src.js"></script></body></html>
